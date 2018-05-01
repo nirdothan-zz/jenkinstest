@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jenkinstest.iml" filepath="$PROJECT_DIR$/.idea/modules/jenkinstest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/untitled/jenkinstest-jenkinstest.iml" filepath="$PROJECT_DIR$/.idea/modules/untitled/jenkinstest-jenkinstest.iml" group="jenkinstest" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/untitled/jenkinstest-jenkinstest_main.iml" filepath="$PROJECT_DIR$/.idea/modules/untitled/jenkinstest-jenkinstest_main.iml" group="jenkinstest" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/untitled/jenkinstest-jenkinstest_test.iml" filepath="$PROJECT_DIR$/.idea/modules/untitled/jenkinstest-jenkinstest_test.iml" group="jenkinstest" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jenkinstest~1.iml" filepath="$PROJECT_DIR$/.idea/modules/jenkinstest~1.iml" />
+    </modules>
+  </component>
+</project>
