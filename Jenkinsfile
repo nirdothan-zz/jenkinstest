@@ -9,7 +9,7 @@ pipeline {
     }
     stage('print') {
       steps {
-        echo '$AWS_PROFILE'
+        echo $AWS_PROFILE
       }
     }
   }
