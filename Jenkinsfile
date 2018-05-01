@@ -9,7 +9,7 @@ pipeline {
     }
     stage('print') {
       steps {
-        echo $AWS_PROFILE
+        echo "param is ${params.nir}"
       }
     }
   }
@@ -17,6 +17,6 @@ pipeline {
     PARAMVAR = 'test'
   }
   parameters {
-    string(name: 'AWS_PROFILE', defaultValue: 'prod_us-west-2', description: 'select AWS profile')
+    string(name: 'nir', defaultValue: 'prod_us-west-2', description: 'select AWS profile')
   }
 }
