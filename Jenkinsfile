@@ -24,6 +24,15 @@ pipeline {
                     echo "Hello, bitwiseman!"
             }
         }
+        
+         stage('print2') {
+        
+           
+            steps {
+                    echo PARAM1
+                    echo $PARAM1
+            }
+        }
     }
   
 }
