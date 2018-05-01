@@ -22,7 +22,8 @@ pipeline {
             steps {
                  sh 'printenv'
                 echo AN_ACCESS_KEY_USR
-                echo "user is ${AN_ACCESS_KEY_USR}"
+                DUMMY=AN_ACCESS_KEY_USR
+                echo "user is ${DUMMY}"
             }
         }
         stage('gradle') {
