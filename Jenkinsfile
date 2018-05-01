@@ -10,6 +10,7 @@ pipeline {
     stage('print') {
       steps {
         echo "param is ${params.nir}"
+        echo 'param is ${params.nir}'
       }
     }
   }
