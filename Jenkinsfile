@@ -9,7 +9,20 @@ pipeline {
             )
     }
 
+    
+    environment { 
+                AN_ACCESS_KEY = credentials('my-prefined-secret-text') 
+            }
+    
+    
+    
+    
     stages {
+        stage('env') {
+            steps {
+                 sh 'printenv'
+            }
+        }
         stage('gradle') {
             steps {
                 sh '''cd untitled; ./gradlew clean build'''
