@@ -3,7 +3,7 @@ pipeline {
   
     parameters {
         choice(
-            choices: 'proj1\nproj2,
+            choices: 'proj1\nproj2',
             description: '',
             name: 'REQUESTED_ACTION'
             )
