@@ -21,7 +21,7 @@ pipeline {
     stages {
         stage('env') {
             when {
-               expression { MYVAR ==~ /(.*)goodbye,(.*)/ }
+               expression { MYVAR ==~ /(.*)goodbye,,(.*)/ }
             }
             steps {
                  sh 'printenv'
