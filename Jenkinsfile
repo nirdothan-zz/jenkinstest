@@ -12,6 +12,7 @@ pipeline {
     
     environment { 
                 AN_ACCESS_KEY = credentials('my-prefined-secret-text') 
+                MYVAR="hello"
             }
     
     
@@ -19,6 +20,9 @@ pipeline {
     
     stages {
         stage('env') {
+            when {
+               expression { MYVAR ==~ /(hello|staging)/ }
+            }
             steps {
                  sh 'printenv'
                 echo AN_ACCESS_KEY_USR
