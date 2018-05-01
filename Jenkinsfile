@@ -1,36 +1,29 @@
 pipeline {
-  agent any
+    agent any
   
-   parameters {
+    parameters {
         choice(
-           
             choices: 'proj1\nproj2,
             description: '',
-            name: 'REQUESTED_ACTION')
+            name: 'REQUESTED_ACTION'
+            )
     }
 
-  
-  
-  stages {
-    stage('gradle') {
-      steps {
-        sh '''cd untitled
-            ./gradlew clean build'''
-      }
-    }
-    stage('print1') {
-     
-      when {
-                  expression { params.REQUESTED_ACTION == 'proj1' }
+    stages {
+        stage('gradle') {
+            steps {
+                sh '''cd untitled; ./gradlew clean build'''
             }
-  steps {
-            echo "Hello, bitwiseman!"
         }
-    
+        stage('print1') {
+        
+            when {
+                    expression { params.REQUESTED_ACTION == 'proj1' }
+            }
+            steps {
+                    echo "Hello, bitwiseman!"
+            }
+        }
     }
-  }
-  environment {
-    PARAMVAR = 'test'
-  }
- 
+  
 }
