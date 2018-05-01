@@ -30,6 +30,8 @@ pipeline {
            
             steps {
                     echo PARAM1
+                    echo choice2
+                    echo params.choice2
                 
             }
         }
