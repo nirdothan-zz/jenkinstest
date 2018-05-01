@@ -1,11 +1,5 @@
 pipeline {
   agent any
-  
-  parameters {
-          string ( name: 'AWS_PROFILE', defaultValue: 'prod_us-west-2', description: 'select AWS profile')
-    }
-
-
   stages {
     stage('gradle') {
       steps {
@@ -13,8 +7,16 @@ pipeline {
 ./gradlew clean build'''
       }
     }
+    stage('print') {
+      steps {
+        echo '$AWS_PROFILE'
+      }
+    }
   }
   environment {
     PARAMVAR = 'test'
+  }
+  parameters {
+    string(name: 'AWS_PROFILE', defaultValue: 'prod_us-west-2', description: 'select AWS profile')
   }
 }
