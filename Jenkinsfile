@@ -2,11 +2,9 @@ pipeline {
   agent any
   stages {
     stage('git') {
-      agent {
-        docker {
-          image 'gradle'
-        }
-
+      agent any
+      environment {
+        myvar = 'nir'
       }
       steps {
         git(url: 'https://github.com/kelseyhightower/nocode.git', branch: 'master')
