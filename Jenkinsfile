@@ -4,7 +4,7 @@ pipeline {
     stage('git') {
       agent any
       steps {
-        git(url: 'git@github.com:nirdothan/gradle1.git', branch: 'master')
+        git(url: 'https://github.com/kelseyhightower/nocode.git', branch: 'master')
       }
     }
   }
