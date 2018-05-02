@@ -6,14 +6,18 @@ pipeline {
       steps {
         git(url: 'https://github.com/kelseyhightower/nocode.git', branch: 'master')
         sh '''echo "NIRNIRNIR"
-ls -l'''
+ls -l
+echo "my location"
+pwd'''
       }
     }
     stage('env') {
       parallel {
         stage('env') {
           steps {
-            sh 'ls -l'
+            sh '''ls -l
+echo "my location"
+pwd'''
           }
         }
         stage('parallel') {
