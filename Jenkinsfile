@@ -5,11 +5,22 @@ pipeline {
       agent any
       steps {
         git(url: 'https://github.com/kelseyhightower/nocode.git', branch: 'master')
+        sh '''echo "NIRNIRNIR"
+ls -l'''
       }
     }
     stage('env') {
-      steps {
-        sh 'ls -l'
+      parallel {
+        stage('env') {
+          steps {
+            sh 'ls -l'
+          }
+        }
+        stage('parallel') {
+          steps {
+            echo 'parallel step'
+          }
+        }
       }
     }
     stage('try') {
