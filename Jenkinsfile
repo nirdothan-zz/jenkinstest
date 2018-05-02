@@ -2,7 +2,12 @@ pipeline {
   agent any
   stages {
     stage('git') {
-      agent any
+      agent {
+        docker {
+          image 'gradle'
+        }
+
+      }
       steps {
         git(url: 'https://github.com/kelseyhightower/nocode.git', branch: 'master')
         sh '''echo "NIRNIRNIR"
@@ -23,6 +28,7 @@ pwd'''
         stage('parallel') {
           steps {
             echo 'parallel step'
+            sh 'pwd'
           }
         }
       }
