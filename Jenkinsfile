@@ -33,7 +33,7 @@ pwd'''
     }
     stage('try') {
       steps {
-        echo 'dummyset'
+        echo 'dummyset ${myvar}'
       }
     }
   }
