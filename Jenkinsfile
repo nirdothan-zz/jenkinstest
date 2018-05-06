@@ -7,6 +7,27 @@ pipeline {
             description: '',
             name: 'REQUESTED_ACTION'
             )
+        
+        booleanParam(defaultValue: true, description: '', name: 'userFlag1')
+        booleanParam(defaultValue: true, description: '', name: 'userFlag2')
+        booleanParam(defaultValue: true, description: '', name: 'userFlag3')
+        booleanParam(defaultValue: true, description: '', name: 'userFlag4')
+        booleanParam(defaultValue: true, description: '', name: 'userFlag5')
+        booleanParam(defaultValue: true, description: '', name: 'userFlag6')
+        booleanParam(defaultValue: true, description: '', name: 'userFlag7')
+        booleanParam(defaultValue: true, description: '', name: 'userFlag8')
+        booleanParam(defaultValue: true, description: '', name: 'userFlag9')
+        booleanParam(defaultValue: true, description: '', name: 'userFlag10')
+        booleanParam(defaultValue: true, description: '', name: 'userFlag11')
+        booleanParam(defaultValue: true, description: '', name: 'userFlag12')
+        booleanParam(defaultValue: true, description: '', name: 'userFlag13')
+        booleanParam(defaultValue: true, description: '', name: 'userFlag14')
+        booleanParam(defaultValue: true, description: '', name: 'userFlag15')
+        booleanParam(defaultValue: true, description: '', name: 'userFlag16')
+        booleanParam(defaultValue: true, description: '', name: 'userFlag17')
+        booleanParam(defaultValue: true, description: '', name: 'userFlag18')
+        booleanParam(defaultValue: true, description: '', name: 'userFlag19')
+        
     }
 
     
