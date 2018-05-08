@@ -36,6 +36,11 @@ pwd'''
         echo 'dummyset ${myvar}'
       }
     }
+    stage('') {
+      steps {
+        readFile 'Jenkinsfile'
+      }
+    }
   }
   parameters {
     choice(choices: '''proj1
