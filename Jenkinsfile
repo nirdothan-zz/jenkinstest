@@ -36,9 +36,9 @@ pwd'''
         echo 'dummyset ${myvar}'
       }
     }
-    stage('') {
+    stage('kkk') {
       steps {
-        readFile 'Jenkinsfile'
+        pwd(tmp: true)
       }
     }
   }
