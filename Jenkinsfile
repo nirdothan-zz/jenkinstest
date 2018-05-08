@@ -7,7 +7,7 @@ pipeline {
         myvar = 'nir'
       }
       steps {
-        git(url: 'https://github.com/kelseyhightower/nocode.git', branch: 'master')
+        git(url: 'https://github.com/kelseyhightower/nocode.git', branch: 'master', credentialsId: 'nird')
         sh '''echo "NIRNIRNIR"
 ls -l
 echo "my location"
@@ -34,11 +34,6 @@ pwd'''
     stage('try') {
       steps {
         echo 'dummyset ${myvar}'
-      }
-    }
-    stage('kkk') {
-      steps {
-        pwd()
       }
     }
   }
