@@ -38,7 +38,7 @@ pwd'''
     }
     stage('kkk') {
       steps {
-        pwd(tmp: true)
+        pwd()
       }
     }
   }
