@@ -26,7 +26,7 @@ pipeline {
         booleanParam(defaultValue: true, description: '', name: 'userFlag16')
         booleanParam(defaultValue: true, description: '', name: 'userFlag17')
         booleanParam(defaultValue: true, description: '', name: 'userFlag18')
-        booleanParam(defaultValue: true, description: '', name: 'userFlag19')
+      
         
     }
 
