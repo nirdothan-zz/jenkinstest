@@ -29,7 +29,7 @@ pipeline {
                expression { MYVAR ==~ /(.*)goodbye,(.*)/ }
             }
             steps {
-                echo "GIT_COMMIT=${GIT_COMMIT}"
+                echo "GIT_COMMIT: ${GIT_COMMIT}"
                  sh 'printenv'
                 echo AN_ACCESS_KEY_USR
                
