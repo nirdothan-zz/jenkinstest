@@ -7,7 +7,7 @@ pipeline {
             description: '',
             name: 'REQUESTED_ACTION'
             )
-        
+        string(defaultValue: 'master', description: '', name: 'gitBranch')
         booleanParam(defaultValue: true, description: '', name: 'userFlag1')
         booleanParam(defaultValue: true, description: '', name: 'userFlag2')
         booleanParam(defaultValue: true, description: '', name: 'userFlag3')
