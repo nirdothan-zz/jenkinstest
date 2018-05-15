@@ -26,9 +26,10 @@ pipeline {
     stages {
         stage('env') {
             when {
-               expression { MYVAR ==~ /(.*)goodbye,,(.*)/ }
+               expression { MYVAR ==~ /(.*)goodbye,(.*)/ }
             }
             steps {
+                echo "GIT_COMMIT=${GIT_COMMIT}"
                  sh 'printenv'
                 echo AN_ACCESS_KEY_USR
                
