@@ -19,7 +19,7 @@ pipeline {
                    else
                       echo 0
                    fi
-                   ''', returnStdout: true)?.trim()
+                   ''', returnStdout: true, returnStatus: false).trim()
                }
                echo "MYTAG=${MYTAG}" 
             }
