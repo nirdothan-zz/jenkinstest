@@ -12,7 +12,7 @@ pipeline {
                script{
                    MYTAG=sh(script: '''
                    #!/bin/bash
-                   tag=`git describe --exact-match --tags ${GIT_COMMIT}`
+                   tag=`git describe --exact-match --tags ${GIT_COMMIT} 2> /dev/null`
                    if [ $? -eq 0 ]
                    then
                       echo $tag
